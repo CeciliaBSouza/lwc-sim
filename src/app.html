@@ -1,0 +1,59 @@
+<template>
+	<div>
+		<h1>Simulador Economia Energia Eólica</h1>
+
+		<div class="slds-size_3-of-4">
+			<div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Basic Carousel
+				<lightning-carousel>
+					<lightning-carousel-image
+						src="https://diarural.com.br/wp-content/uploads/2021/05/sunny-landscape-with-windmills-1360x765.jpg"
+						header="Redução de Impactos" description="Consumo de forma sustentável."
+						alternative-text="Consumo de forma sustentável." href="javascript:void(0);">
+					</lightning-carousel-image>
+					<lightning-carousel-image
+						src="https://clickpetroleoegas.com.br/wp-content/uploads/2020/07/t%C3%A9cnico-de-seguran%C3%A7a-energia-e%C3%B3lica-cwse-vagas-rn.jpg"
+						header="Segurança" description="Fontes renováveis e distribuição monitorada."
+						alternative-text="Second card accessible description." href="javascript:void(0);">
+					</lightning-carousel-image>
+					<lightning-carousel-image
+						src="https://memoria.ebc.com.br/sites/_portalebc2014/files/styles/full_colunm/public/atoms_image/energiaeolica_120829_albert_vilchez_cc_0.jpg?itok=xGdNkmSP"
+						header="Inove" description="Economia e Tecnologia de ponta pra seu negócio."
+						alternative-text="Economia e Tecnologia de ponta pra seu negócio." href="javascript:void(0);">
+					</lightning-carousel-image>
+				</lightning-carousel>
+			</div>
+		</div>
+	</div>
+	<div>
+
+		<h1>Calculadora LWC</h1>
+
+		<div id="cac">
+			<div id="numeros1">
+				<p id='textinho'>Que tal simular o quanto de nergia seria economizado com a utilização da Energia Eólica?</p>
+				<p>Insira sua média de Preço mensal quanto ao custo da energia e Região abaixo:</p>
+
+				<lightning-input type="number" label="Insira aqui o  média de Preço mensal da sua conta de energia : "
+					onchange={mudouN1}></lightning-input>
+			</div>
+			<lightning-combobox name="progress" label="Status" value={value} placeholder={value} options={options}
+				onchange={handleChange}>
+			</lightning-combobox>
+
+		</div><br/>
+
+		<div class="ope">
+
+			<lightning-button variant="success" label="Calcular" onclick={Calcular} class="slds-m-left_x-small">
+			</lightning-button>
+
+
+
+		</div>
+		<h2 class="fontes1" id="resu">{resultado}</h2>
+	</div><br/>
+
+
+
+
+</template>

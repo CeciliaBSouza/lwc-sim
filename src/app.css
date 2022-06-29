@@ -1,0 +1,35 @@
+h1 {
+    color:darkgreen;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+    text-align: center;
+}
+.app {
+    background-color: #fafaf9;
+    height: 100vh;
+    overflow: scroll;
+}
+.ope{
+    text-align: center;
+}
+.carr{
+    text-align: center;
+}
+div{
+    text-align: center;
+    align-items: center;
+    color: green;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    background-color:khaki;
+    
+}
+
+
